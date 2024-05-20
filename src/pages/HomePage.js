@@ -8,6 +8,7 @@ const HomePage =
   const navigate = useNavigate()
   return (
       <>
+
         <div>
           <section>
             <div className="w-100 d-flex justify-content-between align-items-center py-3 bg-white">
