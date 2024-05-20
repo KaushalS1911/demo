@@ -49,8 +49,8 @@ const RegistrationForm = ({ vendor_category }) => {
                   <div className="row">
                     <div className="col-lg-3 col-sm-6 col-12">
                       {" "}
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group my-3">
+                        <label className="form-label">
                           Name : <span className="text-danger">*</span>
                         </label>
                         <Field
@@ -61,8 +61,8 @@ const RegistrationForm = ({ vendor_category }) => {
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group mb-3">
+                        <label className="form-label">
                           Milling type :<span className="text-danger">*</span>
                         </label>
                         <Field
@@ -78,8 +78,8 @@ const RegistrationForm = ({ vendor_category }) => {
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group mb-3">
+                        <label className="form-label">
                           Commodity: <span className="text-danger">*</span>
                         </label>
                         <Field
@@ -95,31 +95,22 @@ const RegistrationForm = ({ vendor_category }) => {
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group mb-3">
+                        <label className="form-label">
                           Quantity: <span className="text-danger">*</span>
                         </label>
                         <Field
                           name="quantity"
                           type="text"
-                          className={`form-control ${
-                            errors.address1 && touched.address1
-                              ? "is-invalid"
-                              : ""
-                          }`}
+                          className="form-control"
                         />
-                        {errors.address1 && touched.address1 ? (
-                          <div className="invalid-feedback">
-                            {errors.address1}
-                          </div>
-                        ) : null}
                       </div>
                     </div>
                   </div>
-                  <div className="row my-3">
+                  <div className="row my-sm-3">
                     <div className="col-lg-3 col-sm-6 col-12">
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group mb-3">
+                        <label className="form-label">
                           Contact Person :{" "}
                           <span className="text-danger">*</span>
                         </label>
@@ -131,8 +122,8 @@ const RegistrationForm = ({ vendor_category }) => {
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group mb-3">
+                        <label className="form-label">
                           Phone Number : <span className="text-danger">*</span>
                         </label>
                         <Field
@@ -143,8 +134,8 @@ const RegistrationForm = ({ vendor_category }) => {
                       </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
-                      <div className="form-group">
-                        <label>
+                      <div className="form-group mb-3">
+                        <label className="form-label">
                           Pan No. : <span className="text-danger">*</span>
                         </label>
                         <Field
@@ -156,7 +147,7 @@ const RegistrationForm = ({ vendor_category }) => {
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
                       <div className="form-group">
-                        <label>
+                        <label className="form-label">
                           GST No. : <span className="text-danger">*</span>
                         </label>
                         <Field
@@ -171,8 +162,8 @@ const RegistrationForm = ({ vendor_category }) => {
                     Address of Proposed Rice Mill Premises
                   </h5>
                   <div className="row mt-2">
-                    <div className="form-group col-12">
-                      <label>
+                    <div className="form-group col-12 my-3">
+                      <label className="form-label">
                         Address <span className="text-danger">*</span>
                       </label>
                       <Field
@@ -183,8 +174,8 @@ const RegistrationForm = ({ vendor_category }) => {
                     </div>
                   </div>
                   <div className="row my-2">
-                    <div className="form-group col-sm-4">
-                      <label>
+                    <div className="form-group col-sm-4 mb-3">
+                      <label className="form-label">
                         District <span className="text-danger">*</span>
                       </label>
                       <Field
@@ -197,8 +188,8 @@ const RegistrationForm = ({ vendor_category }) => {
                         <option value="amareli">Amareli</option>
                       </Field>
                     </div>
-                    <div className="form-group col-sm-4">
-                      <label>
+                    <div className="form-group col-sm-4 mb-3">
+                      <label className="form-label">
                         State <span className="text-danger">*</span>
                       </label>
                       <Field as="select" name="state" className="form-control">
@@ -208,7 +199,7 @@ const RegistrationForm = ({ vendor_category }) => {
                       </Field>
                     </div>
                     <div className="form-group col-sm-4">
-                      <label>
+                      <label className="form-label">
                         Pin Code <span className="text-danger">*</span>
                       </label>
                       <Field
