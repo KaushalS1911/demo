@@ -94,7 +94,7 @@ const Registration = () => {
               </div> */}
             </div>
           </div>
-          <div className="p-sm-5 p-3">
+          <div className="p-sm-5 py-sm-2 p-3">
             {selectedVendor && (
               <RegistrationForm vendor_category={selectedVendor} />
             )}
