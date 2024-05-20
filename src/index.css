@@ -50,3 +50,45 @@ a{
 .text-green {
   color: #1abc9c;
 }
+li {
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.color1 {
+  color: #1ABC9C;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.mainbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.Sidebutton {
+  color: #1ABC9C;
+  padding: 2px 5px;
+  border: solid 1px #1ABC9C;
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.3s;
+}
+.Sidebutton:hover {
+  color: white;
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+}
+.mainbox {
+  height: 80vh;
+}
