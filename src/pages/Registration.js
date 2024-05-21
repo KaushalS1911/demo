@@ -9,6 +9,7 @@ const Registration = () => {
     setSelectedVendor(e.target.value);
   };
 
+
   return (
     <>
       <div className="">
